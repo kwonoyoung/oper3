@@ -1,0 +1,18 @@
+.heatmap-head{align-items:flex-start}
+.heatmap-legend{display:flex;flex-wrap:wrap;gap:8px;align-items:center;color:var(--muted);font-size:12px;font-weight:800}
+.legend-chip{display:inline-flex;align-items:center;gap:6px;padding:5px 8px;border:1px solid var(--line);border-radius:999px;background:#fff}
+.legend-swatch{width:12px;height:12px;border-radius:4px}
+.heatmap-wrap{overflow:auto;border:1px solid var(--line);border-radius:14px}
+.heatmap-table{min-width:760px;font-size:13px}
+.heatmap-table th,.heatmap-table td{padding:12px 14px;text-align:center}
+.heatmap-table th:first-child,.heatmap-table td:first-child{position:sticky;left:0;text-align:left;font-weight:900}
+.heatmap-table th:first-child{z-index:3;background:#eaf2f5}
+.heatmap-table td:first-child{z-index:2;background:#fff}
+.heatmap-table tbody tr:hover td:first-child{background:#f5fbfa}
+.heat-cell{font-variant-numeric:tabular-nums;font-weight:900;transition:background-color .2s ease}
+.heat-cell small{display:block;margin-top:3px;font-size:10px;font-weight:800;opacity:.72}
+.heat-total{border-left:2px solid #c9dbe2}
+.heatmap-empty{padding:28px!important;color:var(--muted);text-align:center!important}
+.heatmap-note{display:flex;gap:8px;align-items:flex-start}
+.heatmap-note::before{content:'ⓘ';color:var(--teal);font-weight:900}
+@media(max-width:620px){.heatmap-head{display:grid}.heatmap-legend{margin-top:4px}}
